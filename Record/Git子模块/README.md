@@ -32,7 +32,7 @@
 	path = Practice/NLP/cnn-text-classification-tf
 	url = https://github.com/dennybritz/cnn-text-classification-tf.git
 
-4.执行上传至远程库的操作
+4.执行上传至远程库的操作，细节见 ../Record/4
 
 	localhost:NLP ruogulu$ git commit -am 'Added cnn-text-classification-tf module'
 	[master 1f68457] Added cnn-text-classification-tf module  
@@ -40,7 +40,7 @@
 		rewrite Book/README.md (84%)
 	delete mode 100644 Practice/CV/FaceDetection/face_detection_comparision/face_detection_comparision.xcodeproj/project.pbxproj
 	delete mode 100644 Practice/CV/FaceDetection/face_detection_comparision/face_detection_comparision.xcodeproj/project.xcworkspace/contents.xcworkspacedata
-	.....
+	.....  此处省略若干delete mode
 	create mode 160000 Practice/NLP/cnn-text-classification-tf
 	localhost:NLP ruogulu$ git push -u origin master
 	Enter passphrase for key '/Users/ruogulu/.ssh/id_rsa': 
