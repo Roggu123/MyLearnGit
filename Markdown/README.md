@@ -56,9 +56,9 @@
 [在Markdown中写注释](https://www.imooc.com/article/23400)
 
 ### 2.1.5 如何插入目录
-#### 2.1.5.1 csdn
++ csdn
 
-#### 2.1.5.2 github
++ github
 参考：[如何实现Github markdown 目录/页内跳转？](https://www.zhihu.com/question/58630229)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc#installation)
 
@@ -78,6 +78,88 @@ $$\widehat f$$
 
 **参考**  
 [Markdown中Latex 数学公式基本语法](https://blog.csdn.net/u014630987/article/details/70156489)
+
+### 2.1.8 绘制表格
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在markdown中绘制表格有三种方法如下：
+  
++ md原生
+
+````
+|		  |值类型 			|引用类型		 |   
+|-------- |:---------:    |:-----:        |    
+|定义		 |直接存储数据	 |持有数据的引用   |  
+|存储		 |栈				|堆		       |
+````
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：
+
+|		  |值类型 			|引用类型		 |   
+|-------- |:---------:    |:-----:        |    
+|定义		 |直接存储数据	 |持有数据的引用   |  
+|存储		 |栈				|堆		       |
+
++ html  
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html表格的优势在于可以实现表格内换行，其它没变，就是加了个``<br>``。
+
+````
+|		  |值类型.         			   |引用类型|   
+|-------- |:---------:    		  		 |:-----:|    
+|定义		 |直接存储数据	 		 		|持有数据的引用|  
+|存储		 |栈							   |堆|
+|例子		 |1. 数字数据类型<br>2.Boolean,Char,Date| 
+````
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：
+
+|		  |值类型.         			   |引用类型|   
+|-------- |:---------:    		  		 |:-----:|    
+|定义		 |直接存储数据	 		 		|持有数据的引用|  
+|存储		 |栈							   |堆|
+|例子		 |1. 数字数据类型<br>2.Boolean,Char,Date| 
+
++ Excel表格导入
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;可以使用软件Typora实现这一功能。Typora[下载链接](https://www.typora.io/),软件无毒，体积小且免费。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;操作步骤（Mac)：
+  
+1. 复制Excel表格里的内容；  
+![Alt text](3.png)  
+2. 粘贴至Typora中，会显示表格，将其选中；  
+![Alt text](4.png)
+3. 选择``复制为Markdown``；  
+![Alt text](5.png)
+4. 在Markdown中粘贴代码；
+
+````
+|      | 值类型                                    | 引用类型       |
+| ---- | ----------------------------------------- | -------------- |
+| 定义 | 直接存储数据                              | 持有数据的引用 |
+| 存储 | 栈                                        | 堆             |
+| 例子 | 1.   数字数据类型;<br>2.Boolean,Char,Date |                |
+
+````
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：
+
+|      | 值类型                                    | 引用类型       |
+| ---- | ----------------------------------------- | -------------- |
+| 定义 | 直接存储数据                              | 持有数据的引用 |
+| 存储 | 栈                                        | 堆             |
+| 例子 | 1.   数字数据类型;<br>2.Boolean,Char,Date |                |
+注意：要实现表格内换行也是在Excel表格中输入时，添加标签``<b>``。
+Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)。  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据网上资料，还可以安装[exceltk](http://www.cnblogs.com/math/p/exceltk.html)，然后通过输入终端命令实现转换，个人实践发现exceltk在Mac里无法安装，所以就不演示了。
+  
+**参考：**  
+[Markdown学习之(2)－绘制表格和流程图](https://blog.csdn.net/yanxiangyfg/article/details/74990232)  
+[markdown表格内如何进行换行？](https://blog.csdn.net/microcosmv/article/details/51868178)  
+[快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)  
+[工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)
+
+
+
+
+
+
  
 
 
