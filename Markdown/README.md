@@ -148,12 +148,44 @@ $$\widehat f$$
 注意：要实现表格内换行也是在Excel表格中输入时，添加标签``<b>``。
 Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)。  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据网上资料，还可以安装[exceltk](http://www.cnblogs.com/math/p/exceltk.html)，然后通过输入终端命令实现转换，个人实践发现exceltk在Mac里无法安装，所以就不演示了。
-  
+
 **参考：**  
 [Markdown学习之(2)－绘制表格和流程图](https://blog.csdn.net/yanxiangyfg/article/details/74990232)  
 [markdown表格内如何进行换行？](https://blog.csdn.net/microcosmv/article/details/51868178)  
 [快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)  
 [工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)
+
+### 2.1.9 绘制树状目录
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想将下图中的目录再划分为四大类（算法，数据，编程，数学），形成一个树状目录，也就是先划分出四个分支，然后每个分支再被划分若干分支。
+![Alt text](CatalogTree.png)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查了很多资料都是生成文件树目录的，感觉无法套用，所以全部手工输入做了一个满足自己要求的树状目录。将如何输入其中一些符号的办法记录如下（我是Mac系统）：  
+
+``shift``+``|``: | 目录左侧竖线  
+``option``+``-``: –– 竖线旁边的横线（位于中间的长横线）  
+``shift``+``-``: _ 位于下部的横线  
+``-``: -- 位于中部的短横线  
+最后我手工造出来的目录如下，输入三个 ` 构造一个代码块，然后就按下面所示的输入名称及横线，办法比较笨，但自认为还是比较简洁方便的。
+
+```  
+├── _算法  
+|   |–– Algorithm ------------- 算法基础知识
+|   |–– ROC_AUC --------------- ROC曲线与AUC详解
+|–– _数据  
+|   |—— Data ------------------ 数据   
+├── _编程  
+|   ├── Python ---------------- Python相关知识  
+|   └── Input & Output -------- 输入输出函数对比总结  
+├── _数学  
+|   ├── Mathmetics ------------ 算法中涉及的数学知识  
+```
+
+
+**参考：**  
+[Markdown语法：表示目录文件结构，方法汇总](https://vimsky.com/article/3606.html)
+## 画流程图
+**参考：**  
+[Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)
+
 
 
 
