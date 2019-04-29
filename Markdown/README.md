@@ -1,9 +1,44 @@
+
+Table of Contents
+=================
+
+   * [Markdown](#markdown)
+      * [2.1 格式问题](#21-格式问题)
+         * [2.1.1 如何换行](#211-如何换行)
+            * [方法一  两段文字间两个空格再回车](#方法一--两段文字间两个空格再回车)
+            * [方法二  两段文字间空一行](#方法二--两段文字间空一行)
+            * [方法三 两段文字间添加标签 &lt;br&gt;..&lt;/br&gt;](#方法三-两段文字间添加标签-brbr)
+         * [2.1.2 代码块的对齐方式](#212-代码块的对齐方式)
+            * [方法详解](#方法详解)
+            * [参考](#参考)
+         * [2.1.3 多行公式](#213-多行公式)
+            * [长公式](#长公式)
+            * [公式组](#公式组)
+            * [分支公式](#分支公式)
+         * [2.1.4 如何添加副标题](#214-如何添加副标题)
+      * [副标题](#副标题)
+         * [2.1.4 如何添加注释](#214-如何添加注释)
+            * [2.1.4.1 方法详解](#2141-方法详解)
+            * [2.1.4.2 参考](#2142-参考)
+         * [2.1.5 如何插入目录](#215-如何插入目录)
+         * [2.1.6 绘制表格](#216-绘制表格)
+         * [2.1.9 绘制树状目录](#219-绘制树状目录)
+      * [画流程图](#画流程图)
+   * [2.2 符号问题](#22-符号问题)  
+   	   * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
+         * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
+         * [2.2.3 添加微积分符号](#223-添加微积分符号)
+         * [2.2.3 空心字母](#223-空心字母)
+         * [2.2.4 梯度](#224-梯度)
+
+
 # Markdown 
 ## 2.1 格式问题
 ### 2.1.1 如何换行
 #### 方法一  两段文字间两个空格再回车
 1.第一种方式换行  
-2.这是一个Markdown编辑器
+2.这是一个Markdown编辑器  
+[锚点](#anchor)
 #### 方法二  两段文字间空一行
 1.第二种方式换行
 
@@ -179,11 +214,62 @@ $$
 [在Markdown中写注释](https://www.imooc.com/article/23400)
 
 ### 2.1.5 如何插入目录
-+ csdn
++ **CSDN**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和大部分Markdown编辑器一样，直接使用`[TOC]`，可以自动生成目录，如下所示：
+  
+````markdown  
+[TOC]  
+# 大标题  
+## 标题二  
+一二三四五···  
+## 标题三  
+六七八九十···
+````  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：  
+![Alt text](csdn.png)  
 
-+ github
++ **GitHub**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub使用的 Markdown 是Github Flavored Markdown，简称 GFM。其中并没有自动生成目录的功能。可以使用一个生成GFM目录的开源工具：[ekalinin/github-markdown-toc](ekalinin/github-markdown-toc)。该工具的使用方法如下：  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*1，安装，终端输入：*   
+
+```  
+\\Mac  
+$ curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc  
+$ chmod a+x gh-md-toc  
+  
+\\Linux 
+$ wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+$ chmod a+x gh-md-toc
+```  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*2. 使用（STDIN，本地（LOCAL），远程（REMOTE））：*  
+  
+```
+\\STDIN  
+$ cat 目标文档位置 | ./gh-md-toc -  
+\\LOCAL  
+$ ./gh-md-toc 目标文档位置  
+\\REMOTE  
+$ ./gh-md-toc https://github.com/Roggu123/Algorithm/blob/master/MyNote/Optimise.md
+```  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*3.实际过程与结果：*  
+  
+![Alt text](Result1.png)  
+![Alt text](Result2.png)  
+![Alt text](Result3.png)  
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*4.将终端显示的结果粘贴到目标Markdown中（以本地文件为例）：*. 
+  
+![Alt text](Result4.png)  
+  
+
+
+
 参考：[如何实现Github markdown 目录/页内跳转？](https://www.zhihu.com/question/58630229)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc#installation)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc#installation)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[生成 GitHub README.md 目录](https://sleepeatcode.com/articles/15/generating-the-github-readme-directory)
 
 ### 2.1.6 绘制表格
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在markdown中绘制表格有三种方法如下：
@@ -309,17 +395,26 @@ $$\hat f(x)$$
 <center>\$widehat f$</center>  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果显示为
-$$\widehat f$$
-### 2.2.2 添加微积分符号
+$$\widehat f$$  
+### 2.2.2 平均数符号如$\overline x$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在字母前加 \overline,具体如下：  
+<center>\$\overline x$</center>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果显示为
+$$\overline x$$
+### 2.2.3 添加微积分符号
 **方法详解**  
 
 
 ### 2.2.3 空心字母   
 ``$\mathbb{R}$``$\rightarrow$ $\mathbb{R}$  
 ### 2.2.4 梯度  
-``$\nabla$`` $\rightarrow$ $\nabla$
+``$\nabla$`` $\rightarrow$ $\nabla$  
+
+<span id = "anchor">锚点</span>
 
 **参考**  
+[CSDN-Markdown语法集锦](https://blog.csdn.net/bone_ace/article/details/46400975)  
 [Markdown中Latex 数学公式基本语法](https://blog.csdn.net/u014630987/article/details/70156489)  
 [markdown 数学公式Latex语法](https://juejin.im/post/5af93ec6518825428b38e7f4)  
 [数学、物理中常用的希腊字母怎么读？](https://www.zhihu.com/question/23655549)
