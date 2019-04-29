@@ -1,6 +1,8 @@
 # 目录 
 ## 本地化及推送本地改动
-<br>见图片1，2，3
+![Alt text](1.png)  
+![Alt text](2.png)  
+![Alt text](3.png)
 ## 推送本地改动注意细节
-<br>见图片4
+![Alt text](4.png)
 
