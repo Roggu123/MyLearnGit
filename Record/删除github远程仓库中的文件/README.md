@@ -3,7 +3,10 @@
     git commit -m 'delete .idea dir'
     git push -u origin master
     
- 具体情况参见图片Record。
+ 具体情况见下图：  
+ ![Alt text](Record.png)
  
- [参考知乎](https://www.zhihu.com/question/20418177)
+ + **参考**  
+ 
+ [如何在 GitHub.com 上删除某个 Repository 中的某个文件夹？](https://www.zhihu.com/question/20418177)
 
