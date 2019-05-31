@@ -15,37 +15,42 @@ Table of Contents
             * [长公式](#长公式)
             * [公式组](#公式组)
             * [分支公式](#分支公式)
+            * [公式编号](#公式编号)
          * [2.1.4 如何添加副标题](#214-如何添加副标题)
-      * [副标题](#副标题)
-         * [2.1.4 如何添加注释](#214-如何添加注释)
-            * [2.1.4.1 方法详解](#2141-方法详解)
-            * [2.1.4.2 参考](#2142-参考)
-         * [2.1.5 如何插入目录](#215-如何插入目录)
-         * [2.1.6 绘制表格](#216-绘制表格)
-         * [2.1.9 绘制树状目录](#219-绘制树状目录)
-      * [画流程图](#画流程图)
-   * [2.2 符号问题](#22-符号问题)  
-   	   * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
+         * [2.1.5 如何添加注释](#215-如何添加注释)
+            * [2.1.5.1 方法详解](#2151-方法详解)
+            * [2.1.5.2 参考](#2152-参考)
+         * [2.1.6 如何插入目录](#216-如何插入目录)
+         * [2.1.7 绘制表格](#217-绘制表格)
+         * [2.1.8 绘制树状目录](#218-绘制树状目录)
+         * [2.1.9 画流程图](#219-画流程图)
+         * [2.1.10 画函数图像](#2110-画函数图像)
+   	* [2.2 符号问题](#22-符号问题)  
+   	      * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
          * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
          * [2.2.3 添加微积分符号](#223-添加微积分符号)
          * [2.2.3 空心字母](#223-空心字母)
-         * [2.2.4 梯度](#224-梯度)
+         * [2.2.4 梯度$\nabla$](#224-梯度)  
+         * [2.2.5 变化量$\Delta$](#225-变化量)  
+      
+    * [2.3 参考](#23-参考)
 
 
-# <a id='markdown'>Markdown</a> 
-## <a id='21-格式问题'>2.1 格式问题</a>
-### <a id='211-如何换行'>2.1.1 如何换行</a>
-#### 方法一  两段文字间两个空格再回车
+#<div id='markdown'>Markdown</a> 
+## <div id='21-格式问题'>2.1 格式问题</a>
+### <div id='211-如何换行'>2.1.1 如何换行</a>
+#### <div id="方法一--两段文字间两个空格再回车">方法一  两段文字间两个空格再回车</div>
 1.第一种方式换行  
 2.这是一个Markdown编辑器  
 
-#### 方法二  两段文字间空一行
+#### <div id="方法二--两段文字间空一行">方法二  两段文字间空一行</div>
 1.第二种方式换行
 
 2.这是一个Markdown编辑器
-#### 方法三 两段文字间添加标签 `<br>..</br>`  
+#### <div id="方法三-两段文字间添加标签-brbr">方法三 两段文字间添加标签`</br>`</div> 
+`1.第三种方式换行</br>2.这是一个Markdown编辑器`  
 1.第三种方式换行</br>2.这是一个Markdown编辑器
-### 2.1.2 代码块的对齐方式
+### <div id="212-代码块的对齐方式">2.1.2 代码块的对齐方式</div>
 #### 方法详解
 
 1. 采用两个`TAB`键来导入代码时,以居中为例；  
@@ -72,7 +77,7 @@ Table of Contents
 #### 参考  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无参考，自己研究体会出来的。
 
-### 2.1.3 多行公式
+### <div id="213-多行公式">2.1.3 多行公式</div>
 
 --------------------
 #### 长公式  
@@ -189,10 +194,19 @@ x,\quad x\leq 0\\
 \end{cases}
 $$
 
+#### <div id="公式编号">公式编号</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;只要在公式后添加`\tag(公式名字)`就可以在公式后面添加编号，详情如下：
+    
+``
+$$\alpha=\frac{1}{u^Ty_k}, \beta=\frac{-1}{v^Ty_k}\tag{1.3}$$
+``    
+
+$$\alpha=\frac{1}{u^Ty_k}, \beta=\frac{-1}{v^Ty_k}\tag{1.3}$$
+
 ------------
 
 
-### 2.1.4 如何添加副标题
+### <a id='214-如何添加副标题'>2.1.4 如何添加副标题</a>
 1. 采用`副标题文字 （换一行） ---`减号两个及以上；如下所示：
  
 	#标题
@@ -207,13 +221,13 @@ $$
 	----
 	![Alt text]( ./2.png "darknet-53")
 
-### 2.1.4 如何添加注释  
+### <a id='215-如何添加注释'>2.1.5 如何添加注释</a>  
 #### 2.1.4.1 方法详解  
 
 #### 2.1.4.2 参考  
 [在Markdown中写注释](https://www.imooc.com/article/23400)
 
-### 2.1.5 如何插入目录
+### <a id='216-如何插入目录'>2.1.6 如何插入目录</a>
 + **CSDN**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和大部分Markdown编辑器一样，直接使用`[TOC]`，可以自动生成目录，如下所示：
   
@@ -230,7 +244,7 @@ $$
 ![Alt text](csdn.png)  
 
 + **GitHub**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub使用的 Markdown 是Github Flavored Markdown，简称 GFM。其中并没有自动生成目录的功能。可以使用一个生成GFM目录的开源工具：[ekalinin/github-markdown-toc](ekalinin/github-markdown-toc)。该工具的使用方法如下：  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub使用的 Markdown 是Github Flavored Markdown，简称 GFM。其中并没有自动生成目录的功能。可以使用一个生成GFM目录的开源工具：[ekalinin/github-markdown-toc](ekalinin/github-markdown-toc)。该工具的使用方法如下(使用该工具时要关闭编辑好的markdown)文档，否则无结果）：  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*1，安装，终端输入：*   
 
@@ -271,7 +285,7 @@ $ ./gh-md-toc https://github.com/Roggu123/Algorithm/blob/master/MyNote/Optimise.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[github-markdown-toc](https://github.com/ekalinin/github-markdown-toc#installation)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[生成 GitHub README.md 目录](https://sleepeatcode.com/articles/15/generating-the-github-readme-directory)
 
-### 2.1.6 绘制表格
+###<a id='217-绘制表格'> 2.1.7 绘制表格</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在markdown中绘制表格有三种方法如下：
   
 + md原生
@@ -287,7 +301,7 @@ $ ./gh-md-toc https://github.com/Roggu123/Algorithm/blob/master/MyNote/Optimise.
 |		  |值类型 			|引用类型		 |   
 |-------- |:---------:    |:-----:        |    
 |定义		 |直接存储数据	 |持有数据的引用   |  
-|存储		 |栈				|堆		       |
+|存储		 |栈				|堆		       | 
 
 + html  
 
@@ -321,14 +335,14 @@ $ ./gh-md-toc https://github.com/Roggu123/Algorithm/blob/master/MyNote/Optimise.
 ![Alt text](5.png)
 4. 在Markdown中粘贴代码；
 
-````
+```
 |      | 值类型                                    | 引用类型       |
 | ---- | ----------------------------------------- | -------------- |
 | 定义 | 直接存储数据                              | 持有数据的引用 |
 | 存储 | 栈                                        | 堆             |
 | 例子 | 1.   数字数据类型;<br>2.Boolean,Char,Date |                |
 
-````
+```
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：
 
@@ -347,7 +361,7 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 [快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)  
 [工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)
 
-### 2.1.9 绘制树状目录
+### <a id='218-绘制树状目录'>2.1.8 绘制树状目录</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想将下图中的目录再划分为四大类（算法，数据，编程，数学），形成一个树状目录，也就是先划分出四个分支，然后每个分支再被划分若干分支。
 ![Alt text](CatalogTree.png)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查了很多资料都是生成文件树目录的，感觉无法套用，所以全部手工输入做了一个满足自己要求的树状目录。将如何输入其中一些符号的办法记录如下（我是Mac系统）：  
@@ -377,15 +391,19 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 
 **参考：**  
 [Markdown语法：表示目录文件结构，方法汇总](https://vimsky.com/article/3606.html)
-## 画流程图
+### <a id='219-画流程图'>2.1.9 画流程图</a>
 **参考：**  
-[Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)
+[Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)  
+### <a id='2110-画函数图像'>2.1.10 画函数图像</a>  
+Markdown是画不了的，但可以通过一些网站画，然后插入图片。  
+**参考：**  
+[desmos](https://www.desmos.com/calculator) 
 
 # 2.2 符号问题
 ![Alt text](https://img-blog.csdn.net/20170423152920434?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)   
 ![Alt text](https://img-blog.csdn.net/20170423153258655?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
 ![Alt text](https://img-blog.csdn.net/20170423153715939?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast) 
-### 2.2.1 字母头顶加倒三角如$\widehat f$
+### <div id="221-字母头顶加倒三角如widehat-f">2.2.1 字母头顶加倒三角如$\widehat f$</div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在字母前加 \hat,具体如下：  
 <center>\$\hat f(x)$</center>
 
@@ -406,19 +424,20 @@ $$\overline x$$
 **方法详解**  
 
 
-### 2.2.3 空心字母   
+### <div id="223-空心字母">2.2.3 空心字母$\mathbb{R}$</div>   
 ``$\mathbb{R}$``$\rightarrow$ $\mathbb{R}$  
-### 2.2.4 梯度  
+### <div id="224-梯度">2.2.4 梯度$\nabla$</div>  
 ``$\nabla$`` $\rightarrow$ $\nabla$  
-
-<span id = "anchor">锚点</span>
-
-**参考**  
-[CSDN-Markdown语法集锦](https://blog.csdn.net/bone_ace/article/details/46400975)  
-[Markdown中Latex 数学公式基本语法](https://blog.csdn.net/u014630987/article/details/70156489)  
-[markdown 数学公式Latex语法](https://juejin.im/post/5af93ec6518825428b38e7f4)  
-[数学、物理中常用的希腊字母怎么读？](https://www.zhihu.com/question/23655549)
+### <div id="225-变化量">2.2.5 变化量$\Delta$</div>  
+``$\Delta`` $\rightarrow$ $\Delta$  
   
+## <div id="23-参考">2.3 参考</a>  
++ **格式**  
+[1].[Markdown语法整理](https://guo365.github.io/study/Markdown.html#3)  
+[2].[CSDN-Markdown语法集锦](https://blog.csdn.net/bone_ace/article/details/46400975)  
+[3].[Markdown中Latex 数学公式基本语法](https://blog.csdn.net/u014630987/article/details/70156489)  
+[4].[markdown 数学公式Latex语法](https://juejin.im/post/5af93ec6518825428b38e7f4)  
+[5].[数学、物理中常用的希腊字母怎么读？](https://www.zhihu.com/question/23655549)
 
 
 
