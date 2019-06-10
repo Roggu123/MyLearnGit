@@ -396,11 +396,15 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 
 **参考：**  
 [Markdown语法：表示目录文件结构，方法汇总](https://vimsky.com/article/3606.html)
+
 ### <div id='219-画流程图'>2.1.9 画流程图</a>
+
 **参考：**  
-[Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)  
+[Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)
+  
 ### <div id='2110-画函数图像'>2.1.10 画函数图像</a>  
-Markdown是画不了的，但可以通过一些网站画，然后插入图片。  
+Markdown是画不了的，但可以通过一些网站画，然后插入图片。
+  
 **参考：**  
 [desmos](https://www.desmos.com/calculator)   
 
@@ -412,12 +416,20 @@ Markdown是画不了的，但可以通过一些网站画，然后插入图片。
    1. 基础格式  
    `![Alt text](图片路径或链接)`  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该方法比较简单且美观，但无法调整图片大小。  
-   2. 标签
+   2. 调用标签  
    `<img src="图片路径或链接" width="宽度" height="高度"/>`  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该方法适合对图片进行调整，但比较麻烦且有时不美观，因此有时需在外嵌套标签`<div align="">..</div>`，`<figrure></figure>`等调整图片位置。  
    
-**<div id='21112-并排显示'>并排显示</div>**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;通过`<center>`插入图片比较小，但默认居中较美观；通过`<figure>`插入图片可以调整大小，但不居中，可通过标签`<div align="center">...</div>`调整。  
+**<div id='21112-并排显示'>并排显示</div>**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础格式插入图片默认一行一张，目前没看到有调整办法。要想一行并排显示多张图片一般都采用标签的方式实现。
+
+1. 居中显示  
+`<center class="half">...</center>`
+2. 左对齐显示  
+`<figure class="half">...</figure>`
+  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以上均为设置两张图片并排显示，可以通过修改为`class="third"`实现三张图片并排显示，其它的依次类推。通过`<center>`插入图片比较小，但默认居中较美观；通过`<figure>`插入图片可以调整大小，但不居中，可通过标签`<div align="center">...</div>`调整为居中。
+  
 **参考**：  
 [1] WMN7Q.[关于Markdown里的图片并排显示](https://blog.csdn.net/WMN7Q/article/details/73138326)
 
