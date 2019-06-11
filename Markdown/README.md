@@ -32,11 +32,12 @@ Table of Contents
       * [2.2 符号问题](#22-符号问题)  
          * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
          * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
-         * [2.2.3 添加微积分符号](#223-添加微积分符号)
-         * [2.2.3 空心字母](#223-空心字母)
-         * [2.2.4 梯度$\nabla$](#224-梯度)  
-         * [2.2.5 变化量$\Delta$](#225-变化量). 
-         * [2.2.6 矩阵符号](#226-矩阵符号)
+         * [2.2.3 等价于符号$\sim$](#223-等价于符号)
+         * [2.2.4 添加微积分符号](#224-添加微积分符号)
+         * [2.2.5 空心字母](#225-空心字母)
+         * [2.2.6 梯度$\nabla$](#226-梯度)  
+         * [2.2.7 变化量$\Delta$](#227-变化量). 
+         * [2.2.8 矩阵符号](#228-矩阵符号)
            
       * [2.3 参考](#23-参考)
 
@@ -448,26 +449,35 @@ $$\hat f(x)$$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果显示为
 $$\widehat f$$  
-### 2.2.2 平均数符号如$\overline x$  
+### <div id="222-平均数符号">2.2.2 平均数符号如$\overline x$  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在字母前加 \overline,具体如下：  
 <center>\$\overline x$</center>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果显示为
-$$\overline x$$
-### 2.2.3 添加微积分符号
+$$\overline x$$  
+
+### <div id="223-等价于符号">2.2.3 等价于符号$\sim$</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;符号$\sim$可以表达很多意思，具体如下：
+
+1. 可以表示等价于。以求极限为例，$x$等价于$sin(x)$可写成$x \sim sin(x)$，  
+``$x \sim sin(x)$``$\rightarrow$ $x \sim sin(x)$   
+2. 可以表示负样本，以贝叶斯公式为例，  
+``$P(L|+)=\frac{P(+|L)P(L)}{P(+|L)P(L)+P(+|\sim L)P(\sim L)}$``$\rightarrow$ $P(L|+)=\frac{P(+|L)P(L)}{P(+|L)P(L)+P(+|\sim L)P(\sim L)}$ 
+
+### <div id="224-添加微积分符号">2.2.4 添加微积分符号</div>
 **方法详解**  
 
 
-### <div id="223-空心字母">2.2.3 空心字母$\mathbb{R}$</div>   
+### <div id="225-空心字母">2.2.5 空心字母$\mathbb{R}$</div>   
 ``$\mathbb{R}$``$\rightarrow$ $\mathbb{R}$  
   
-### <div id="224-梯度">2.2.4 梯度$\nabla$</div>  
+### <div id="226-梯度">2.2.6 梯度$\nabla$</div>  
 ``$\nabla$`` $\rightarrow$ $\nabla$  
   
-### <div id="225-变化量">2.2.5 变化量$\Delta$</div>  
+### <div id="227-变化量">2.2.7 变化量$\Delta$</div>  
 ``$\Delta`` $\rightarrow$ $\Delta$  
   
-### <div id="226-矩阵符号">2.2.6 矩阵符号</div>
+### <div id="228-矩阵符号">2.2.8 矩阵符号</div>
 **不带括号的矩阵**：  
 
 ```markdown
@@ -552,8 +562,9 @@ $$
 [6] WMN7Q.[关于Markdown里的图片并排显示](https://blog.csdn.net/WMN7Q/article/details/73138326)
 
 + **符号**  
-[1] xxq2dream.[使用MarkDown画矩阵](https://www.jianshu.com/p/08cbe54a5f33)
-
+[1] xxq2dream.[使用MarkDown画矩阵](https://www.jianshu.com/p/08cbe54a5f33)  
+[2] 一生之寄.[数学符号中各种“约等于”表示符号有没有不同？有什么不同？](https://www.zhihu.com/question/33314612)  
+[3] Milton.[深入浅出数据分析](https://github.com/Roggu123/DataAnalysis/blob/master/References/深入浅出数据分析中文版.李芳.扫描版.pdf)
 
 
 
