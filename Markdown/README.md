@@ -33,11 +33,13 @@ Table of Contents
          * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
          * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
          * [2.2.3 等价于符号$\sim$](#223-等价于符号)
-         * [2.2.4 添加微积分符号](#224-添加微积分符号)
-         * [2.2.5 空心字母](#225-空心字母)
-         * [2.2.6 梯度$\nabla$](#226-梯度)  
-         * [2.2.7 变化量$\Delta$](#227-变化量). 
-         * [2.2.8 矩阵符号](#228-矩阵符号)
+         * [2.2.4 添加微积分符号$\int$,$\mathrm{d}$ 和 $\partial$](#224-添加微积分符号)
+         * [2.2.5 极限$\min$及其下标](#225-极限及其下标)
+         * [2.2.6 空心字母$\mathbb{R}$](#226-空心字母)
+         * [2.2.7 梯度$\nabla$](#227-梯度)  
+         * [2.2.8 变化量$\Delta$](#228-变化量)
+         * [2.2.9 向量$\vec{x_1}$和$\mathbf{x}$](#229-向量) 
+         * [2.2.10 矩阵符号](#2210-矩阵符号)
            
       * [2.3 参考](#23-参考)
 
@@ -148,7 +150,7 @@ x =& a + b + c + \\
 $$ 
 
 ---------------
-#### 公式组  
+#### <div id="公式组">公式组</div>  
 需要对齐的公式组使用``align``，不需要对齐的公式组使用``gather``，示例如下：  
   
 ````
@@ -182,7 +184,7 @@ y &= x + 4
 $$ 
  
 ------------- 
-#### 分支公式  
+#### <div id="分支公式">分支公式</div>  
 分段函数通常使用cases次环境表示，示例如下：
   
 ````
@@ -212,7 +214,7 @@ $$\alpha=\frac{1}{u^Ty_k}, \beta=\frac{-1}{v^Ty_k}\tag{1.3}$$
 ------------
 
 
-### <a id='214-如何添加副标题'>2.1.4 如何添加副标题</a>
+### <div id='214-如何添加副标题'>2.1.4 如何添加副标题</div>
 1. 采用`副标题文字 （换一行） ---`减号两个及以上；如下所示：
  
 	#标题
@@ -247,7 +249,7 @@ $$\alpha=\frac{1}{u^Ty_k}, \beta=\frac{-1}{v^Ty_k}\tag{1.3}$$
 ````  
   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果如下：  
-![Alt text](csdn.png)  
+![Alt text](Pictures/csdn.png)  
 
 + **GitHub**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub使用的 Markdown 是Github Flavored Markdown，简称 GFM。其中并没有自动生成目录的功能。可以使用一个生成GFM目录的开源工具：[ekalinin/github-markdown-toc](ekalinin/github-markdown-toc)。该工具的使用方法如下(使用该工具时要关闭编辑好的markdown)文档，否则无结果）：  
@@ -465,20 +467,34 @@ $$\overline x$$
 ``$P(L|+)=\frac{P(+|L)P(L)}{P(+|L)P(L)+P(+|\sim L)P(\sim L)}$``$\rightarrow$ $P(L|+)=\frac{P(+|L)P(L)}{P(+|L)P(L)+P(+|\sim L)P(\sim L)}$ 
 
 ### <div id="224-添加微积分符号">2.2.4 添加微积分符号</div>
-**方法详解**  
+1. 积分符号  
+``$\int_{k=1}^n$``$\rightarrow$ $\int_{k=1}^n$
+  
+2. 微分符号  
+偏微分：``$\partial y$``  $\partial y$  
+微分：``$\mathrm{d} y$``  $\mathrm{d} y$
 
+### <div id="225-极限及其下标">2.2.5 极限$\min$及其下标</div> 
+``$\min \limits_{\lambda>0} f(x)$``$\rightarrow$ $\min \limits_{\lambda>0} f(x)$
 
-### <div id="225-空心字母">2.2.5 空心字母$\mathbb{R}$</div>   
+### <div id="226-空心字母">2.2.6 空心字母$\mathbb{R}$</div>   
 ``$\mathbb{R}$``$\rightarrow$ $\mathbb{R}$  
   
-### <div id="226-梯度">2.2.6 梯度$\nabla$</div>  
+### <div id="227-梯度">2.2.7 梯度$\nabla$</div>  
 ``$\nabla$`` $\rightarrow$ $\nabla$  
   
-### <div id="227-变化量">2.2.7 变化量$\Delta$</div>  
-``$\Delta`` $\rightarrow$ $\Delta$  
-  
-### <div id="228-矩阵符号">2.2.8 矩阵符号</div>
+### <div id="228-变化量">2.2.8 变化量$\Delta$</div>  
+``$\Delta`` $\rightarrow$ $\Delta$
+
+### <div id="229-向量">2.2.9 向量$\vec{x_1}$或$\mathbf{x}$</div>
+向量有两种表示形式如下：  
+``$\vec{x_1}$`` $\rightarrow$ $\vec{x_1}$  
+或  
+``$\mathbf{x}$`` $\rightarrow$ $\mathbf{x}$  
+
+### <div id="2210-矩阵符号">2.2.10 矩阵符号</div>
 **不带括号的矩阵**：  
+  
 
 ```markdown
 $$
@@ -564,7 +580,8 @@ $$
 + **符号**  
 [1] xxq2dream.[使用MarkDown画矩阵](https://www.jianshu.com/p/08cbe54a5f33)  
 [2] 一生之寄.[数学符号中各种“约等于”表示符号有没有不同？有什么不同？](https://www.zhihu.com/question/33314612)  
-[3] Milton.[深入浅出数据分析](https://github.com/Roggu123/DataAnalysis/blob/master/References/深入浅出数据分析中文版.李芳.扫描版.pdf)
+[3] Milton.[深入浅出数据分析](https://github.com/Roggu123/DataAnalysis/blob/master/References/深入浅出数据分析中文版.李芳.扫描版.pdf)  
+[4] Leon.[Markdown语法和LaTeX数学记号速查手册](http://www.domuse.com/markdown-and-latex-equation-handbook.html)
 
 
 
