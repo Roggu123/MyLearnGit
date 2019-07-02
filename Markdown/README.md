@@ -31,7 +31,7 @@ Table of Contents
          
       * [2.2 符号问题](#22-符号问题)  
          * [2.2.1 字母头顶加倒三角$\widehat f$](#221-字母头顶加倒三角如widehat-f)
-         * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
+         * [2.2.2 平均数符号$\overline x$](#222-平均数符号)
          * [2.2.3 等价于符号$\sim$](#223-等价于符号)
          * [2.2.4 添加微积分符号$\int$,$\mathrm{d}$ 和 $\partial$](#224-添加微积分符号)
          * [2.2.5 极限$\min \limits_{\lambda>0} f(x)$及其下标](#225-极限及其下标)  
@@ -453,7 +453,7 @@ $$\hat f(x)$$
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;结果显示为
 $$\widehat f$$  
-### <div id="222-平均数符号">2.2.2 平均数符号如$\overline x$  
+### <div id="222-平均数符号">2.2.2 平均数符号$\overline x$  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在字母前加 \overline,具体如下：  
 <center>\$\overline x$</center>
 
