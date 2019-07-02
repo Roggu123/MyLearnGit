@@ -30,16 +30,18 @@ Table of Contents
             * [并排显示](#21112-并排显示) 
          
       * [2.2 符号问题](#22-符号问题)  
-         * [2.2.1 字母头顶加倒三角如$\widehat f$](#221-字母头顶加倒三角如widehat-f)
+         * [2.2.1 字母头顶加倒三角$\widehat f$](#221-字母头顶加倒三角如widehat-f)
          * [2.2.2 平均数符号如$\overline x$](#222-平均数符号如overline-x)
          * [2.2.3 等价于符号$\sim$](#223-等价于符号)
          * [2.2.4 添加微积分符号$\int$,$\mathrm{d}$ 和 $\partial$](#224-添加微积分符号)
-         * [2.2.5 极限$\min$及其下标](#225-极限及其下标)
-         * [2.2.6 空心字母$\mathbb{R}$](#226-空心字母)
-         * [2.2.7 梯度$\nabla$](#227-梯度)  
-         * [2.2.8 变化量$\Delta$](#228-变化量)
-         * [2.2.9 向量$\vec{x_1}$和$\mathbf{x}$](#229-向量) 
-         * [2.2.10 矩阵符号](#2210-矩阵符号)
+         * [2.2.5 极限$\min \limits_{\lambda>0} f(x)$及其下标](#225-极限及其下标)  
+         * [2.2.6 极限$\lim_{\epsilon \to 0}$及其下标](#226-极限及它下标)
+         * [2.2.7 空心字母$\mathbb{R}$](#227-空心字母)
+         * [2.2.8 梯度$\nabla$](#228-梯度)  
+         * [2.2.9 变化量$\Delta$](#229-变化量)
+         * [2.2.10 导数$f'(x_0)$](#2210-导数)
+         * [2.2.11 向量$\vec{x_1}$和$\mathbf{x}$](#2211-向量) 
+         * [2.2.12 矩阵符号](#2212-矩阵符号)
            
       * [2.3 参考](#23-参考)
 
@@ -440,7 +442,7 @@ Markdown是画不了的，但可以通过一些网站画，然后插入图片。
 ![Alt text](https://img-blog.csdn.net/20170423152920434?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)   
 ![Alt text](https://img-blog.csdn.net/20170423153258655?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
 ![Alt text](https://img-blog.csdn.net/20170423153715939?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvd2lyZWxlc3NfY29t/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast) 
-### <div id="221-字母头顶加倒三角如widehat-f">2.2.1 字母头顶加倒三角如$\widehat f$</div>
+### <div id="221-字母头顶加倒三角如widehat-f">2.2.1 字母头顶加倒三角$\widehat f$</div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在字母前加 \hat,具体如下：  
 <center>\$\hat f(x)$</center>
 
@@ -474,25 +476,31 @@ $$\overline x$$
 偏微分：``$\partial y$``  $\partial y$  
 微分：``$\mathrm{d} y$``  $\mathrm{d} y$
 
-### <div id="225-极限及其下标">2.2.5 极限$\min$及其下标</div> 
-``$\min \limits_{\lambda>0} f(x)$``$\rightarrow$ $\min \limits_{\lambda>0} f(x)$
+### <div id="225-极限及其下标">2.2.5 极限$\min \limits_{\lambda>0} f(x)$及其下标</div> 
+``$\min \limits_{\lambda>0} f(x)$``$\rightarrow$ $\min \limits_{\lambda>0} f(x)$  
 
-### <div id="226-空心字母">2.2.6 空心字母$\mathbb{R}$</div>   
+### <div id="226-极限及它下标">2.2.6 极限$\lim_{\epsilon \to 0}$及其下标</div>  
+``$\lim_{\epsilon \to 0}$`` $\rightarrow$ $\lim_{\epsilon \to 0}$
+
+### <div id="227-空心字母">2.2.7 空心字母$\mathbb{R}$</div>   
 ``$\mathbb{R}$``$\rightarrow$ $\mathbb{R}$  
   
-### <div id="227-梯度">2.2.7 梯度$\nabla$</div>  
+### <div id="228-梯度">2.2.8 梯度$\nabla$</div>  
 ``$\nabla$`` $\rightarrow$ $\nabla$  
   
-### <div id="228-变化量">2.2.8 变化量$\Delta$</div>  
-``$\Delta`` $\rightarrow$ $\Delta$
+### <div id="229-变化量">2.2.9 变化量$\Delta$</div>  
+``$\Delta$`` $\rightarrow$ $\Delta$  
 
-### <div id="229-向量">2.2.9 向量$\vec{x_1}$或$\mathbf{x}$</div>
+### <div id="2210-导数">2.2.10 导数$f'(x_0)$</div>
+``$f'(x_0)$`` $\rightarrow$ $f'(x_0)$
+
+### <div id="2211-向量">2.2.11 向量$\vec{x_1}$或$\mathbf{x}$</div>
 向量有两种表示形式如下：  
 ``$\vec{x_1}$`` $\rightarrow$ $\vec{x_1}$  
 或  
 ``$\mathbf{x}$`` $\rightarrow$ $\mathbf{x}$  
 
-### <div id="2210-矩阵符号">2.2.10 矩阵符号</div>
+### <div id="2212-矩阵符号">2.2.12 矩阵符号</div>
 **不带括号的矩阵**：  
   
 
