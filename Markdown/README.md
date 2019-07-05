@@ -21,13 +21,14 @@ Table of Contents
             * [2.1.5.1 方法详解](#2151-方法详解)
             * [2.1.5.2 参考](#2152-参考)
          * [2.1.6 如何插入目录](#216-如何插入目录)
-         * [2.1.7 绘制表格](#217-绘制表格)
-         * [2.1.8 绘制树状目录](#218-绘制树状目录)
-         * [2.1.9 画流程图](#219-画流程图)
-         * [2.1.10 画函数图像](#2110-画函数图像)  
-         * [2.1.11 图片相关](#2111-图片相关)
-            * [插入图片](#21111-插入图片)
-            * [并排显示](#21112-并排显示) 
+         * [2.1.7 绘制表格](#217-绘制表格)  
+         * [2.1.8 调整表格位置](#218-调整表格位置)
+         * [2.1.9 绘制树状目录](#219-绘制树状目录)
+         * [2.1.10 画流程图](#2110-画流程图)
+         * [2.1.11 画函数图像](#2111-画函数图像)  
+         * [2.1.12 图片相关](#2112-图片相关)
+            * [插入图片](#21121-插入图片)
+            * [并排显示](#21122-并排显示) 
          
       * [2.2 符号问题](#22-符号问题)  
          * [2.2.1 字母头顶加倒三角$\widehat f$](#221-字母头顶加倒三角如widehat-f)
@@ -369,11 +370,31 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 [Markdown学习之(2)－绘制表格和流程图](https://blog.csdn.net/yanxiangyfg/article/details/74990232)  
 [markdown表格内如何进行换行？](https://blog.csdn.net/microcosmv/article/details/51868178)  
 [快速将Excel表格转换为MarkDown表格 /Convert Excel to the MarkDown](https://steemit.com/cn/@jubi/excel-markdown-convert-excel-to-the-markdown)  
-[工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)
+[工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)  
 
-### <div id='218-绘制树状目录'>2.1.8 绘制树状目录</div>
+### <div id='218-调整表格位置'>2.1.8 调整表格位置</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表格默认是居左的，要调整表格居中，居右。可以分别用标签`<div align="center"></div>`和`<div center="right">...</div>`将表格括起来就好。具体示例如下：  
+
+  ```
+  <div align="center">
+  |		     |值类型 	    |引用类型		 |   
+  |-------- |:---------:|:-----:     |    
+  |定义		  |直接存储数据	 |持有数据的引用|  
+  |存储		  |栈		    |堆		    |
+  </div>
+  ```  
+结果如下
+<div align="center">
+
+|		     |值类型 	    |引用类型		 |   
+|-------- |:---------:|:-----:     |    
+|定义		  |直接存储数据	 |持有数据的引用|  
+|存储		  |栈		    |堆		    |
+</div>
+
+### <div id='219-绘制树状目录'>2.1.9 绘制树状目录</div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想将下图中的目录再划分为四大类（算法，数据，编程，数学），形成一个树状目录，也就是先划分出四个分支，然后每个分支再被划分若干分支。
-![Alt text](CatalogTree.png)  
+![Alt text](Pictures/CatalogTree.png)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;查了很多资料都是生成文件树目录的，感觉无法套用，所以全部手工输入做了一个满足自己要求的树状目录。将如何输入其中一些符号的办法记录如下（我是Mac系统）：  
 
 ``shift``+``|``: | 目录左侧竖线  
@@ -402,20 +423,20 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 **参考：**  
 [Markdown语法：表示目录文件结构，方法汇总](https://vimsky.com/article/3606.html)
 
-### <div id='219-画流程图'>2.1.9 画流程图</a>
+### <div id='2110-画流程图'>2.1.10 画流程图</a>
 
 **参考：**  
 [Markdown快速入门](https://zhuanlan.zhihu.com/p/40446298)
   
-### <div id='2110-画函数图像'>2.1.10 画函数图像</a>  
+### <div id='2111-画函数图像'>2.1.11 画函数图像</a>  
 Markdown是画不了的，但可以通过一些网站画，然后插入图片。
   
 **参考：**  
 [desmos](https://www.desmos.com/calculator)   
 
-### <div id='2111-图片相关'>2.1.11 图片相关</div>
+### <div id='2112-图片相关'>2.1.12 图片相关</div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参考[关于Markdown里的图片并排显示](https://blog.csdn.net/WMN7Q/article/details/73138326)进行总结。  
-**<div id='21111-插入图片'>插入图片</div>**
+**<div id='21121-插入图片'>插入图片</div>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在Markdown中插入图片有两种方法如下：  
 
    1. 基础格式  
@@ -425,7 +446,7 @@ Markdown是画不了的，但可以通过一些网站画，然后插入图片。
    `<img src="图片路径或链接" width="宽度" height="高度"/>`  
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该方法适合对图片进行调整，但比较麻烦且有时不美观，因此有时需在外嵌套标签`<div align="">..</div>`，`<figrure></figure>`等调整图片位置。  
    
-**<div id='21112-并排显示'>并排显示</div>**
+**<div id='21122-并排显示'>并排显示</div>**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基础格式插入图片默认一行一张，目前没看到有调整办法。要想一行并排显示多张图片一般都采用标签的方式实现。
 
 1. 居中显示  
