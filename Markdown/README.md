@@ -373,10 +373,11 @@ Windows下的操作步骤可参考这篇博文[快速将Excel表格转换为Mark
 [工具(3): 转换Excel表格到MarkDown：exceltk](http://www.cnblogs.com/math/p/exceltk.html)  
 
 ### <div id='218-调整表格位置'>2.1.8 调整表格位置</div>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表格默认是居左的，要调整表格居中，居右。可以分别用标签`<div align="center"></div>`和`<div center="right">...</div>`将表格括起来就好。具体示例如下：  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;表格默认是居左的，要调整表格居中，居右。可以分别用标签`<div align="center"></div>`和`<div center="right">...</div>`将表格括起来就好。具体示例如下（要输入表格时直接在文字后回车并在下一行输入表格，不需两个空格后回车）：  
 
   ```
   <div align="center">
+  
   |		     |值类型 	    |引用类型		 |   
   |-------- |:---------:|:-----:     |    
   |定义		  |直接存储数据	 |持有数据的引用|  
@@ -550,10 +551,10 @@ $$
 $$
 \left[
  \begin{matrix}
-   a & b & c & d & e\\
-   f & g & h & i & j \\
-   k & l & m & n & o \\
-   p & q & r & s & t
+   a & b & c & d \\
+   f & g & h & i \\
+   \vdots & \cdots & \ddots & n \\
+   p & q & r & s 
   \end{matrix} 
 \right]
 $$
@@ -562,10 +563,10 @@ $$
 $$
 \left[
  \begin{matrix}
-   a & b & c & d & e\\
-   f & g & h & i & j \\
-   k & l & m & n & o \\
-   p & q & r & s & t
+   a & b & c & d \\
+   f & g & h & i \\
+   \vdots & \cdots & \ddots & n \\
+   p & q & r & s 
   \end{matrix} 
 \right]
 $$
